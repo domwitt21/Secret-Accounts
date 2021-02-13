@@ -15,6 +15,9 @@ a {
 li {
     list-style: none;
 }
+#products {
+    transition: .5s ease-in-out;
+}
 .navbarContainer {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     z-index: 1;
