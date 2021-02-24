@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en-US">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,7 +8,11 @@
         <meta name="expires" content="never">
         <meta name="language" content="English, EN">
         <meta name="robots" content="index, follow">
-        <meta name="description" content="MrReds Underground Video Game Mod Forum">
+        <meta name="og:title" content="Premium Secret Accounts">
+        <meta name="og:site_name" content="Secret Accounts">
+        <meta name="og:description" content="Premium Accounts at a Low Cost!">
+        <meta name="og:image" content="media/images/logoTwo.png">
+        <meta name="twitter:card" content="media/images/logoTwo.png">
         <meta name="keywords"
             content="mods, modz, gta, gtav, gta v, GTAV, GTA, Grand Theft Auto, Grand Theft Auto 5, rockstar, Rockstar, Fortnite, PUBG, pubg, fortnite, video games, games, professional gaming,
                 faze, FaZe Clan, faze clan, faze up, FaZe Up, FaZeUp, Obey, obeyclan, gaming team, gaming clan, gaming mods, best mods for playstation, best mods for xbox, xbox gaming, playstation gaming, pc gaming">
@@ -23,15 +27,15 @@
         <script src="js/index.js"></script>
         <script src="https://shoppy.gg/api/embed.js"></script>
     </head>
-    <body>
+    <body onload="loadFunc()">
         <div class="bgContainer"></div>
         <div class="bgContainerTwo"></div>
         <header>
-            <div class="navbarContainer">
+            <div class="navbarContainer" id="home">
                 <div class="navbarContents">
                     <h1>SECRET ACCOUNTS</h1>
                     <ul class="navList">
-                        <a href="index.html"><li>Home</li></a>
+                        <a href="#home"><li>Home</li></a>
                         <a href="https://discord.gg/VhZsFamP" target="_blank"><li>Discord</li></a>
                         <a href="#products"><li>Products</li></a>
                     </ul>
@@ -107,7 +111,7 @@
             <div class="productsContainer" id="products">
                 <div class="productsContents">
                     <div class="productOne">
-                        <a href="https://shoppy.gg/@lateside" target="_blank"><img src="media/images/fortniteLogo.png" title="fortnite" alt="Fortnite" class="fortniteImg"></a>
+                        <a href="https://shoppy.gg/@lateside" target="_blank"><img src="media/images/fortnitelogo.png" title="fortnite" alt="Fortnite" class="fortniteImg"></a>
                         <div class="imgCaption">
                             <h3><strong>Fortnite Accounts/Cheats</strong></h3>
                         </div>
@@ -168,5 +172,14 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
             crossorigin="anonymous"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.2.7/firebase-app.js"></script>
+        
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/8.2.7/firebase-analytics.js"></script>
+        
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
     </body>
 </html>

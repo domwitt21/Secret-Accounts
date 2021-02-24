@@ -21,6 +21,8 @@ li {
 .navbarContainer {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     z-index: 1;
+    animation: fadeInDown 2s;
+    transition: 2s ease-in-out;
 }
 .navbarContainer ul.navList {
     position: absolute;
@@ -277,7 +279,7 @@ img.nordLogo:hover {
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     left: -25%;
-    height: 500px;
+    height: 450px;
 }
 .footerLogo {
     margin-left: 20%;
@@ -315,19 +317,173 @@ img.nordLogo:hover {
     text-shadow: 0px 0px 10px rgb(255, 0, 0);
 }
 
-
-
-
-
-
-
-
-.fadeInDown {
-
+@media screen and (max-width: 1679px) {
+    .discordWidget { margin-top: 17%; }
+    .aboutContents h2::before { top: 106vh; }
+    .aboutContents h2::after { top: 106vh; }
+    div.productHeaderMain h2::before { bottom: -40vh; }
+    div.productHeaderMain h2::after { bottom: -40vh; }
+    .footLinks h3 { width: 19%; }
+}
+@media screen and (max-width: 1440px) {
+    .discordWidget { margin-top: 13.5%; }
+    .aboutContents h2::before { top: 106vh; }
+    .aboutContents h2::after { top: 106vh; }
+    .aboutContents { margin-top: 10%; }
+    div.productHeaderMain h2::before { bottom: -36vh; }
+    div.productHeaderMain h2::after { bottom: -36vh; }
+    .footLinks h3 { width: 22%; }
+    .footerMain { top: 290%; }
+    .noticeContainer { top: 235%; }
+}
+@media screen and (max-width: 1380px) {
+    .discordWidget { margin-top: 3%; margin-right: 24%; }
+    .aboutContents h2::before { top: 110.5vh; }
+    .aboutContents h2::after { top: 110.5vh; }
+    .aboutContents { margin-top: 14%; }
+    div.productHeaderMain h2::before { bottom: -40vh; }
+    div.productHeaderMain h2::after { bottom: -40vh; }
+    .footLinks h3 { width: 23%; }
+    .footerMain { top: 310%; height: 350px; }
+    .noticeContainer { top: 265%; left: 27%; width: 50%; }
+    div.carousel-caption{ position: absolute; top: 50%; left: 20%; }
+    .slidebgImg { left: 26%; }
+    .navbarContainer ul.navList { right: -18%; }
+    .navbarContents h1 { margin-left: 5%; }
+}
+@media screen and (max-width: 1200px) {
+    .discordWidget { margin-top: 10%; margin-right: 20.2%; }
+    .aboutContents h2::before { top: 106vh; }
+    .aboutContents h2::after { top: 106vh; }
+    .aboutContents { margin-top: 14%; }
+    div.productHeaderMain h2::before { bottom: -36vh; }
+    div.productHeaderMain h2::after { bottom: -36vh; }
+    .footLinks h3 { width: 25.5%; }
+    .footerMain { top: 310%; height: 350px; }
+    .noticeContainer { top: 265%; left: 27%; width: 50%; }
+    div.carousel-caption{ position: absolute; top: 50%; left: 20%; }
+    .slidebgImg { left: 26%; }
+    .navbarContainer ul.navList { right: -18%; }
+    .navbarContents h1 { margin-left: 5%; }
+}
+@media screen and (max-width: 1080px) {
+    .discordWidget { margin-top: 10%; margin-right: 18%; }
+    .aboutContents h2::before { top: 104vh; }
+    .aboutContents h2::after { top: 104vh; }
+    .aboutContents { margin-top: 14%; }
+    div.productHeaderMain h2::before { bottom: -32vh; }
+    div.productHeaderMain h2::after { bottom: -32vh; }
+    .footLinks h3 { width: 28%; }
+    .footLinks ul { position: absolute; left: 30%; }
+    .footerContents img { margin-top: 5%; }
+    .footerMain { top: 310%; height: 350px; }
+    .noticeContainer { top: 265%; left: 27%; width: 50%; }
+    div.carousel-caption{ position: absolute; top: 50%; left: 20%; }
+    .slidebgImg { left: 26%; }
+    .navbarContainer ul.navList { right: -18%; }
+    .navbarContents h1 { margin-left: 5%; }
+}
+@media screen and (max-width: 1024px) {
+    .discordWidget { margin-top: 10%; margin-right: 18%; }
+    .aboutContents h2::before { top: 102.5vh; }
+    .aboutContents h2::after { top: 102.5vh; }
+    .aboutContents { margin-top: 14%; }
+    div.productHeaderMain h2::before { bottom: -29vh; }
+    div.productHeaderMain h2::after { bottom: -29vh; }
+    .footLinks h3 { width: 29.5%; }
+    .footLinks ul { position: absolute; left: 30%; }
+    .footerContents img { margin-top: 5%; }
+    .footerMain { top: 310%; height: 350px; }
+    .noticeContainer { top: 260%; left: 27%; width: 50%; }
+    div.carousel-caption{ position: absolute; top: 50%; left: 20%; }
+    .slidebgImg { left: 26%; }
+    .navbarContainer ul.navList { right: -18%; }
+    .navbarContents h1 { margin-left: 5%; }
+}
+@media screen and (max-width: 500px) {
+    .discordWidget { margin-top: 72%; margin-right: 10%; width: 70%; }
+    .aboutContents h2::before { top: 109vh; }
+    .aboutContents h2::after { top: 109vh; }
+    .aboutContents { margin-top: 14%; }
+    div.productHeaderMain h2::before { bottom: -66vh; }
+    div.productHeaderMain h2::after { bottom: -66vh; }
+    .footLinks h3 { width: 60%; margin-left: 0; }
+    .footLinks ul { position: absolute; left: 40%; display: block; }
+    .footerContents img { margin-top: 5%; }
+    .footerMain { top: 370%; height: 450px; }
+    .noticeContainer { top: 315%; left: 20%; width: 70%; padding: 5%; }
+    div.carousel-caption{ position: absolute; top: 50%; left: 20%; }
+    .slidebgImg { left: 0%; top: 5%; }
+    .navbarContainer ul.navList { right: -15%; top: 3%; width: 100%; }
+    .navbarContents h1 { margin-left: 30%; }
+    .productHeaderMain { margin-top: 25%; }
+    .productsContents { display: block; margin-right: 25%; margin-top: 20%; column-gap: 0; }
+    .alpha { width: 100%; position: absolute; bottom: -135%; }
+    .bravo { width: 100%; position: absolute; bottom: -157%; }
+    .productTwo { width: 70%; position: absolute; bottom: -165%; left: 5%; }
+    .aboutContents { margin-top: 35%; }
+    .aboutContents h2 { margin-bottom: 10%; }
+}
+@media screen and (max-width: 375px) {
+    .discordWidget { margin-top: 72%; margin-right: 15%; width: 70%; }
+    .aboutContents h2::before { top: 103vh; }
+    .aboutContents h2::after { top: 103vh; }
+    .aboutContents { margin-top: 14%; }
+    div.productHeaderMain h2::before { bottom: -59vh; }
+    div.productHeaderMain h2::after { bottom: -59vh; }
+    .footLinks h3 { width: 80%; margin-left: -10%; margin-top: 2%; }
+    .footLinks ul { position: absolute; left: 40%; display: block; }
+    .footerContents img { margin-top: 5%; }
+    .footerMain { top: 370%; height: 450px; }
+    .noticeContainer { top: 300%; left: 15%; width: 70%; padding: 5%; }
+    div.carousel-caption{ position: absolute; top: 50%; left: 20%; }
+    .slidebgImg { left: 0%; top: 5%; }
+    .navbarContainer ul.navList { right: -3%; top: 3%; width: 100%; }
+    .navbarContents h1 { margin-left: 20%; }
+    .productHeaderMain { margin-top: 25%; }
+    .productsContents { display: block; margin-right: 25%; margin-top: 20%; column-gap: 0; }
+    .alpha { width: 100%; position: absolute; bottom: -115%; }
+    .bravo { width: 100%; position: absolute; bottom: -135%; }
+    .productTwo { width: 70%; position: absolute; bottom: -145%; left: 5%; }
+    .aboutContents { margin-top: 35%; }
+    .aboutContents h2 { margin-bottom: 10%; }
+}
+@media screen and (max-width: 300px) {
+    .discordWidget { margin-top: 72%; margin-right: 15%; width: 70%; }
+    .aboutContents h2::before { top: 103vh; }
+    .aboutContents h2::after { top: 103vh; }
+    .aboutContents { margin-top: 14%; }
+    div.productHeaderMain h2::before { bottom: -59vh; }
+    div.productHeaderMain h2::after { bottom: -59vh; }
+    .footLinks h3 { width: 80%; margin-left: -10%; margin-top: 2%; }
+    .footLinks ul { position: absolute; left: 40%; display: block; }
+    .footerContents img { margin-top: 5%; }
+    .footerMain { top: 370%; height: 450px; }
+    .noticeContainer { top: 300%; left: 15%; width: 70%; padding: 5%; }
+    div.carousel-caption{ position: absolute; top: 50%; left: 20%; }
+    .slidebgImg { left: 0%; top: 5%; }
+    .navbarContainer ul.navList { right: -3%; top: 3%; width: 100%; }
+    .navbarContents h1 { margin-left: 20%; }
+    .productHeaderMain { margin-top: 25%; }
+    .productsContents { display: block; margin-right: 25%; margin-top: 20%; column-gap: 0; }
+    .alpha { width: 100%; position: absolute; bottom: -115%; }
+    .bravo { width: 100%; position: absolute; bottom: -135%; }
+    .productTwo { width: 70%; position: absolute; bottom: -145%; left: 5%; }
+    .aboutContents { margin-top: 35%; }
+    .aboutContents h2 { margin-bottom: 10%; }
 }
 
-@keyframes fadeInDown {
 
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transition: 2s ease-in-out;
+    }
+    100% {
+        opacity: 1;
+        transition: 2s ease-in-out;
+    }
 }
 
 @keyframes fadeUp {

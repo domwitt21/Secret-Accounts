@@ -1,3 +1,3 @@
-window.addEventListener('scroll', () => {
-    document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-}, false);
+// function loadFunc() {
+//     alert("This Page isn't optimized for Mobile support!");
+// }
